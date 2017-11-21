@@ -1,0 +1,8 @@
+<div *ngIf="visible" class="launchpad">
+  <div *ngFor="let app of apps" class="app">
+    <div class="app__box">
+        {{app.code}}
+    </div>
+    <!-- <a>{{app.name}}</a> -->
+  </div>
+</div>

@@ -1,0 +1,25 @@
+.launchpad {
+  display: grid;
+  width: 100%;
+  margin-left: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+    grid-template-areas: "app nothing";
+  color: whitesmoke;
+}
+
+.app {
+  border: 2px;
+  border-color: black;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  background: linear-gradient(45deg,#004b8d,#08a79e)!important;
+  justify-content: center;
+}
+
+.app__box {
+  display: inline-block;
+  padding: 15px 10px 5px 10px;
+}

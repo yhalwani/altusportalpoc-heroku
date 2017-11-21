@@ -1,0 +1,96 @@
+.topheader {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  display: block;
+  position: relative;
+  left: 160px;
+}
+
+.topheader__bar {
+  height: 40px;
+  background: #004d8d;
+  width: calc(100% - 160px);
+  // width: 100%;
+  z-index: 1000;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  background: linear-gradient(to right,#004b8d,#08a79e)!important;
+  margin-left: 100px;
+  font-family: Lato,sans-serif;;
+  height: 40px;
+  z-index: 1000;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  background: #004d8d;
+  top: 0;
+  left: -20px;
+  bottom: 0;
+  width: 50px;
+  transform: skew(45deg);
+  z-index: 99999;
+}
+
+.header a {
+  float: right;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.lang-menu {
+  float: right;
+  overflow: hidden;
+}
+
+.lang-menu .lang-menu__btn {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+}
+
+.header a:hover, .lang-menu:hover .lang-menu__btn {
+  background-color: #004d8d;
+}
+
+.lang-menu__sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.lang-menu__sub-menu button {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.lang-menu__sub-menu button:hover {
+  background-color: #ddd;
+}
+
+.lang-menu:hover .lang-menu__sub-menu {
+  display: block;
+}

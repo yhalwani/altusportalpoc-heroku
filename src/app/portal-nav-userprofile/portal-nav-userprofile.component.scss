@@ -1,0 +1,13 @@
+.authenicated {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "notification appicon avatar";
+  grid-gap: 0.5em;
+}
+
+span {
+  font-family: Lato, sans-serif;
+  text-align: right;
+  color: #739DD2;
+}
