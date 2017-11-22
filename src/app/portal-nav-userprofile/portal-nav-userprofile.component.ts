@@ -17,6 +17,7 @@ export class PortalNavUserprofileComponent implements OnInit {
   }
 
   onLogin(identity) {
+    console.log('Authenticated!');
     this.authenticated = !this.authenticated;
     this.callbackHandler.setUser(identity);
   }
