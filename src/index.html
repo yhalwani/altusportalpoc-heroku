@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+
   <meta charset="utf-8">
   <title>AltusPortalPOC</title>
   <base href="/">
@@ -14,16 +15,21 @@
   <meta name="salesforce-mode" content="modal">
   <meta name="salesforce-target" content="#sign-in-link">
   <meta name="salesforce-login-handler" content="onLogin">
+
   <link href="https://portaltestingcommunity-developer-edition.na73.force.com/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css"/>
+  <script src="https://portaltestingcommunity-developer-edition.na73.force.com/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
 
 </head>
 <body>
+
   <app-root></app-root>
-  <script src="https://portaltestingcommunity-developer-edition.na73.force.com/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
+
   <script>
     function onLogin(identity) {
       console.log(identity);
+      console.log('Index login');
     }
   </script>
+
 </body>
 </html>
