@@ -16,12 +16,12 @@ export class PortalNavUserprofileComponent implements OnInit {
     this.authenticated = false;
   }
 
-  onLogin(identity) {
-    console.log(identity);
-    console.log('User onlogin');
-    // this.authenticated = !this.authenticated;
-    // this.callbackHandler.setUser(identity);
-  }
+  // onLogin(identity) {
+  //   console.log(identity);
+  //   console.log('User onlogin');
+  //   this.authenticated = !this.authenticated;
+  //   this.callbackHandler.setUser(identity);
+  // }
 
   ngOnInit() {
   }
