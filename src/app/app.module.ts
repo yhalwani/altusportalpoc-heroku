@@ -12,7 +12,6 @@ import { ApplaunchpadComponent } from './portal-navbar/portal-navbar-applaunchpa
 
 import { LaunchpadtoggleService } from './portal-navbar/portal-navbar-launchpadtoggle.service';
 import { UserprofileCallbackService } from './portal-nav-userprofile/portal-nav-userprofile-callback.service';
-import { SafePipe } from './portal-nav-userprofile/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -22,8 +21,7 @@ import { SafePipe } from './portal-nav-userprofile/safe.pipe';
     UsernotificationComponent,
     ApplauncherComponent,
     UsericonComponent,
-    ApplaunchpadComponent,
-    SafePipe
+    ApplaunchpadComponent
   ],
   imports: [
     BrowserModule

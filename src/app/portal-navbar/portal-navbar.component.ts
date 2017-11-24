@@ -19,12 +19,7 @@ export class PortalNavbarComponent implements OnInit {
     this.logo = 'http://www.altusgroup.com/wp-content/themes/altus/images/altus_logo.svg';
     this.subscription = this.translate.languageState$.subscribe(
       language => {
-        if (language == 'English') {
-          this.today = 'Today';
-          this.news = 'News';
-          this.events = 'Events';
-          this.logo = 'http://www.altusgroup.com/wp-content/themes/altus/images/altus_logo.svg';
-        } else if (language == 'Français') {
+        if (language == 'Français') {
           this.today = 'Aujourd\'hui';
           this.news = 'Nouvelles';
           this.events = 'Événements';
@@ -33,6 +28,11 @@ export class PortalNavbarComponent implements OnInit {
           this.today = 'Heute';
           this.news = 'Nachrichten';
           this.events = 'Veranstaltungen';
+          this.logo = 'http://www.altusgroup.com/wp-content/themes/altus/images/altus_logo.svg';
+        } else {
+          this.today = 'Today';
+          this.news = 'News';
+          this.events = 'Events';
           this.logo = 'http://www.altusgroup.com/wp-content/themes/altus/images/altus_logo.svg';
         }
       }
