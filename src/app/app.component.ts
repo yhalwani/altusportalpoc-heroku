@@ -12,24 +12,28 @@ export class AppComponent {
   subscription: Subscription;
   contact = 'Contact';
   language = 'English';
+  languages: any;
   title = 'app';
 
   constructor(private translate: TranslateService) {
-    this.subscription = this.translate.laugageState$.subscribe(
+    this.languages = this.translate.getLanguages;
+    this.subscription = this.translate.languageState$.subscribe(
       language => {
-        if (language == true) {
-          this.language = 'English';
-          this.contact = 'Nous Joindre';
-        } else {
-          this.language = 'Français';
+        this.languages = this.translate.getLanguages;
+        this.languages.delete(language);
+        if (language == 'English') {
           this.contact = 'Contact';
+        } else if (language == 'Français') {
+          this.contact = 'Nous Joindre';
+        } else if (language == 'Deutsche') {
+          this.contact = 'Kontakt';
         }
       }
     )
   }
 
-  changeLang() {
-    this.translate.toggleLanguageState();
+  changeLang(lang) {
+    this.translate.toggleLanguageState(lang);
   }
 
 }
