@@ -20,7 +20,7 @@ export class AppComponent {
     this.subscription = this.translate.languageState$.subscribe(
       language => {
         this.languages = this.translate.getLanguages;
-        this.languages.delete(language);
+        // this.languages.delete(language);
         if (language == 'English') {
           this.contact = 'Contact';
         } else if (language == 'Français') {
