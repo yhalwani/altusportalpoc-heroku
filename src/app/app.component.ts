@@ -11,7 +11,7 @@ export class AppComponent {
 
   subscription: Subscription;
   contact = 'Contact';
-  language = 'English';
+  language: String = 'English';
   languages: Set<String>;
   title = 'app';
 
@@ -19,6 +19,7 @@ export class AppComponent {
     this.languages = this.translate.getLanguages();
     this.subscription = this.translate.languageState$.subscribe(
       language => {
+        this.language = language;
         this.languages = this.translate.getLanguages();
         // this.languages.delete(language);
         if (language == 'English') {
