@@ -12,14 +12,14 @@ export class AppComponent {
   subscription: Subscription;
   contact = 'Contact';
   language = 'English';
-  languages: any;
+  languages: Set<String>;
   title = 'app';
 
   constructor(private translate: TranslateService) {
-    this.languages = this.translate.getLanguages;
+    this.languages = this.translate.getLanguages();
     this.subscription = this.translate.languageState$.subscribe(
       language => {
-        this.languages = this.translate.getLanguages;
+        this.languages = this.translate.getLanguages();
         // this.languages.delete(language);
         if (language == 'English') {
           this.contact = 'Contact';
